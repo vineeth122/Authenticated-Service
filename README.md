@@ -1,7 +1,5 @@
 # Authenticated Service
 
-This project was a part of a submission to the cybersecurity course CY6740 Network Security. The goal of the project was to develop a password-authenticated network service with defenses against denial-of-service attacks and online password guessing attacks (bruteforce attacks).
-
 ## Service Specification
 
 The service implements a simple protocol using [protobuf v3](https://developers.google.com/protocol-buffers) messages. In this protocol, each message is preceded by a two-byte, big-endian integer giving the length of the following protobuf message. Each TCP connection only supports one message exchange. The protocol is as shown below.
